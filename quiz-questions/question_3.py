@@ -13,4 +13,8 @@ def remove_Es(a_string):
     remove_Es('abc')      # 'abc'
     """
     # Write your code here
-    pass
+    a_list = list(a_string)
+    a_list.remove('E')
+    a_list.remove('e')
+    a_list = ''.join(a_list)
+    print(a_list)
